@@ -1,18 +1,17 @@
-<script setup lang="ts">
-import { ref } from 'vue'
+<script lang="ts">
+import { store } from '../store/Store';
 
-const count = ref(0)
+export default {
+  setup() {
+    return {
+      store
+    }
+  }
+}
+
 </script>
-
 <template>
   <div>
-    <button type="button" @click="count++">you have {{ count }} bones</button>
+    <button type="button" @click="store.increment()">you have {{ store.count }} bones</button>
   </div>
-  CODENOSIS
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>

@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Button from './components/Button.vue'
+import Footer from './components/Footer/Footer.vue'
 </script>
 
 <template>
   <Button/>
+  <Footer/>
 </template>
 
 <style scoped>
