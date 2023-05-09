@@ -3,7 +3,7 @@ import { store } from "../store/Store"
 export const storage_controller = {
     save_game() {
         return localStorage.setItem("save", store.playerObject);
-      },
+    },
 
     load_game() {
         return localStorage.getItem("save")
@@ -17,5 +17,5 @@ export const storage_controller = {
     timer_init() {
         console.info("initiating save timer")
         setInterval(() => this.save_game(), 10000)
-      }
+    }
 }

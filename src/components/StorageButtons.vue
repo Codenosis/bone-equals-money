@@ -1,16 +1,13 @@
-
-
 <script lang="ts">
-
 import { store } from '../store/Store';
 
-  export default {
-    setup() {
+export default {
+  setup() {
     return {
       store
     }
   }
-  };
+};
 </script>
 
 <template>
@@ -22,6 +19,5 @@ import { store } from '../store/Store';
   </div>
   <div class="deleteBtn">
     <button type="button" @click="store.get_storage_controller().delete_game"> DELETE </button>
-  </div> 
+  </div>
 </template>
-
