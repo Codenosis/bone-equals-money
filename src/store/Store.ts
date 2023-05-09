@@ -1,8 +1,11 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-  count: 0,
+  playerObject: {
+    bones: 0,
+    worms: 0
+  },
   increment() {
-    this.count++
+    this.playerObject.bones++
   }
 })
