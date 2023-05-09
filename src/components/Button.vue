@@ -8,6 +8,9 @@ export default {
     }
   }
 }
+
+console.info(store.playerObject)
+
 </script>
 <template>
   <div>

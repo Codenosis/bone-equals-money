@@ -1,15 +1,19 @@
 import { reactive } from 'vue'
-import { storage_controller } from '../controllers/Storage_controller'
+
+interface PlayerObject {
+  bones: number
+}
 
 export const store = reactive({
 
-  playerObject: JSON.parse(storage_controller.load_game() ?? JSON.stringify({ bones: 0 })),
+  playerObject: {bones: 0} as PlayerObject,
+  
   increment() {
     this.playerObject.bones++
   },
 
-  get_storage_controller() {
-    return storage_controller
+  set_playerObject(new_object: PlayerObject) {
+    this.playerObject = new_object
   }
 
 })

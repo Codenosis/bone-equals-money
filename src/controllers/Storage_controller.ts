@@ -7,12 +7,14 @@ export const storage_controller = {
 
     load_game() {
         console.log("loaded smile")
+        store.set_playerObject(JSON.parse(localStorage.getItem("save") ?? JSON.stringify({ bones: 0 })))
         return localStorage.getItem("save")
     },
 
     delete_game() {
         localStorage.removeItem("save")
         localStorage.clear
+        this.load_game()
     },
 
     timer_init() {
