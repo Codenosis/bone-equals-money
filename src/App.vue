@@ -5,6 +5,7 @@ import StorageButtons from './components/StorageButtons.vue'
 import { storage_controller } from './controllers/Storage_controller';
 
 storage_controller.load_game()
+storage_controller.timer_init()
 </script>
 
 <template>
