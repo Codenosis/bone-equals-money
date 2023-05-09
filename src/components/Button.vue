@@ -8,9 +8,7 @@ export default {
     }
   }
 }
-
 </script>
-
 <template>
   <div>
     <button type="button" @click="store.increment()">you have {{ store.playerObject.bones }} bones</button>
