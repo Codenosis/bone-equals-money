@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import Button from './components/Button.vue'
+import Footer from './components/Footer/Footer.vue'
+import StorageButtons from './components/StorageButtons.vue'
 </script>
 
 <template>
   <Button/>
+  <StorageButtons/>
+  <Footer/>
 </template>
 
 <style scoped>

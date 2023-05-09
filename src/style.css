@@ -14,15 +14,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -63,6 +54,16 @@ button:focus-visible {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2a2929;
+  color: white;
   text-align: center;
 }
 
