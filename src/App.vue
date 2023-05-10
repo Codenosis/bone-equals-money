@@ -2,7 +2,7 @@
 import Button from './components/Button/Button.vue'
 import Footer from './components/Footer/Footer.vue'
 import Shop from './components/Shop/Shop.vue'
-import { storage_controller } from './Controllers/Storage_controller';
+import { storage_controller } from './Controllers/StorageController.js';
 import StorageButtons from './components/StorageButtons/StorageButtons.vue'
 
 storage_controller.load_game()
