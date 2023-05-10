@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import Button from './components/Button.vue'
+import Button from './components/Button/Button.vue'
 import Footer from './components/Footer/Footer.vue'
-import StorageButtons from './components/StorageButtons.vue'
 import Shop from './components/Shop/Shop.vue'
-import { storage_controller } from './controllers/Storage_controller';
+import { storage_controller } from './Controllers/Storage_controller';
+import StorageButtons from './components/StorageButtons/StorageButtons.vue'
 
 storage_controller.load_game()
 storage_controller.timer_init()
 </script>
 
 <template>
-  <Button/>
-  <Shop/>
-  <StorageButtons/>
-  <Footer/>
-  
+  <Button />
+  <Shop />
+  <StorageButtons />
+  <Footer />
 </template>
 
 <style scoped>
@@ -24,9 +23,11 @@ storage_controller.timer_init()
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }

@@ -9,7 +9,7 @@ export const store = reactive({
   playerObject: {
     bones: 0,
   } as PlayerObject,
-  
+
   increment() {
     this.playerObject.bones++
   },
@@ -17,5 +17,4 @@ export const store = reactive({
   set_playerObject(new_object: PlayerObject) {
     this.playerObject = new_object
   }
-
 })

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { store } from '../store/Store';
+import { store } from '../../store/Store.js';
 
 export default {
   setup() {

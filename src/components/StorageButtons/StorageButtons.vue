@@ -1,5 +1,5 @@
 <script lang="ts">
-import { storage_controller } from '../controllers/Storage_controller';
+import { storage_controller } from '../../Controllers/Storage_controller'
 
 export default {
   setup() {

@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import upgrades from './Upgrades'
-
-
-
 </script>
 
 <template>
