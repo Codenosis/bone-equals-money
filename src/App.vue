@@ -2,11 +2,13 @@
 import Button from './components/Button/Button.vue'
 import Footer from './components/Footer/Footer.vue'
 import Shop from './components/Shop/Shop.vue'
-import { storage_controller } from './Controllers/StorageController.js';
+import { StorageController } from './Controllers/StorageController.ts';
+import { GameController } from './Controllers/GameController.ts';
 import StorageButtons from './components/StorageButtons/StorageButtons.vue'
 
-storage_controller.load_game()
-storage_controller.timer_init()
+StorageController.load_game()
+StorageController.timer_init()
+GameController.gameLoop()
 </script>
 
 <template>

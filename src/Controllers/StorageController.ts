@@ -1,13 +1,15 @@
 import { store } from "../store/Store"
 
-export const storage_controller = {
+export const StorageController = {
     save_game() {
         return localStorage.setItem("save", JSON.stringify(store.playerObject));
     },
 
     load_game() {
         console.log("loaded smile")
-        store.set_playerObject(JSON.parse(localStorage.getItem("save") ?? JSON.stringify({ bones: 0 })))
+        store.set_playerObject(JSON.parse(localStorage.getItem("save") ?? JSON.stringify({
+            bones: 0,
+            bonesPerSecond: 1 })))
         return localStorage.getItem("save")
     },
 

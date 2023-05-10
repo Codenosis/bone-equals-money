@@ -1,10 +1,10 @@
 <script lang="ts">
-import { storage_controller } from '../../Controllers/StorageController.ts'
+import { StorageController } from '../../Controllers/StorageController.ts'
 
 export default {
   setup() {
     return {
-      storage_controller
+      StorageController
     }
   }
 };
@@ -12,12 +12,12 @@ export default {
 
 <template>
   <div class="saveBtn">
-    <button type="button" @click="storage_controller.save_game"> SAVE </button>
+    <button type="button" @click="StorageController.save_game"> SAVE </button>
   </div>
   <div class="loadBtn">
-    <button type="button" @click="storage_controller.load_game"> LOAD </button>
+    <button type="button" @click="StorageController.load_game"> LOAD </button>
   </div>
   <div class="deleteBtn">
-    <button type="button" @click="storage_controller.delete_game"> DELETE </button>
+    <button type="button" @click="StorageController.delete_game"> DELETE </button>
   </div>
 </template>
