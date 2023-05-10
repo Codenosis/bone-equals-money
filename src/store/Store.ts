@@ -6,7 +6,9 @@ interface PlayerObject {
 
 export const store = reactive({
 
-  playerObject: {bones: 0} as PlayerObject,
+  playerObject: {
+    bones: 0,
+  } as PlayerObject,
   
   increment() {
     this.playerObject.bones++

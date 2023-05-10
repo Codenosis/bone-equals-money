@@ -2,6 +2,7 @@
 import Button from './components/Button.vue'
 import Footer from './components/Footer/Footer.vue'
 import StorageButtons from './components/StorageButtons.vue'
+import Shop from './components/Shop/Shop.vue'
 import { storage_controller } from './controllers/Storage_controller';
 
 storage_controller.load_game()
@@ -10,8 +11,10 @@ storage_controller.timer_init()
 
 <template>
   <Button/>
+  <Shop/>
   <StorageButtons/>
   <Footer/>
+  
 </template>
 
 <style scoped>
