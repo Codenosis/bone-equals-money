@@ -12,14 +12,9 @@ export default {
 
 <template>
   <div class="optionsBar">
-    
       <button type="button" @click="storage_controller.save_game"> SAVE </button>
-    
-    
       <button type="button" @click="storage_controller.load_game"> LOAD </button>
-    
       <button type="button" @click="storage_controller.delete_game"> DELETE </button>
-    
   </div>
 </template>
 
